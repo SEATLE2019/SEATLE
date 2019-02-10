@@ -1,10 +1,7 @@
-import numpy as np
-import itertools
 import collections
-import os
-import pickle
-from scipy import sparse
+import numpy as np
 import scipy.sparse as sp
+from scipy import sparse
 
 
 def normalize_adj(adj):
@@ -27,9 +24,7 @@ def preprocess_adj(adj):
 def load_graph_data(fname, dis_threshold):
     with open(fname) as f:
         contents = f.readlines()
-    ADJ_i = []
-    ADJ_j = []
-    ADJ_v = []
+    ADJ_i, ADJ_j, ADJ_v  = [], [], []
     num_locs = 0
     for line in contents:
         line = line.strip().split('\t')
@@ -44,7 +39,7 @@ def load_graph_data(fname, dis_threshold):
             ADJ_v.append(1)
     num_locs += 1
     ADJ = sparse.coo_matrix((ADJ_v, (ADJ_i, ADJ_j)), shape=(num_locs, num_locs))
-    print 'loc num: ', num_locs
+    print 'number of businesses: ', num_locs
     return np.array(preprocess_adj(ADJ)), num_locs
 
 
@@ -132,6 +127,7 @@ def load_checkin_data(fname):
              label[idx]])
     dict_businessIds = collections.Counter(businessId_list)
     return pos_train_dict, dict_businessIds, user_num
+
 
 def load_checkin_data_v1(fname_train, fname_valiate):
     # data = list(set(open(fname).readlines()))
