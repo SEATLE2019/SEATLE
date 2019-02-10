@@ -11,4 +11,5 @@ The code is for "Self-Attentive Few-Shot Learning for New Customer Recommendatio
 A sample dataset is provided in folder data.
 ## Example to run this code
 Train and evaluate the model:
-python seatle_learning.py
+
+`python seatle_learning.py`
