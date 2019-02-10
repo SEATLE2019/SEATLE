@@ -9,6 +9,8 @@ The code is for "Self-Attentive Few-Shot Learning for New Customer Recommendatio
   Numpy: 1.14.3
 ## Dataset
 A sample dataset is provided in folder data.
+For training, validation, and test set, we split each of them into two sets: one positive set and one negative set. The positive set contains obeserved user check-ins while the negative set is composed of fake check-ins by negative sampling.
+The first column gives the business ID and the second column gives the user ID.
 ## Example to run this code
 Train and evaluate the model:
 
