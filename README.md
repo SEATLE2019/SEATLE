@@ -1,5 +1,5 @@
 # SEATLE
-The code is provided for "Self-Attentive Few-Shot Learning for New Customer Recommendation in Location-based Social Networks".
+The code is for "Self-Attentive Few-Shot Learning for New Customer Recommendation in Location-based Social Networks".
 
 ## Environments 
   Python: 2.7
