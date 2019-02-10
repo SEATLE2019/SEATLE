@@ -7,3 +7,7 @@ The code is for "Self-Attentive Few-Shot Learning for New Customer Recommendatio
   Tensor-Flow: 1.11.0
   
   Numpy: 1.14.3
+## Dataset
+xxx
+## Example to run this code
+xxx
