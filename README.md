@@ -8,7 +8,7 @@ The code is for "Self-Attentive Few-Shot Learning for New Customer Recommendatio
   
   Numpy: 1.14.3
 ## Dataset
-xxx
+A sample dataset is provided in folder data.
 ## Example to run this code
 Train and evaluate the model:
 python seatle_learning.py
