@@ -281,7 +281,7 @@ def infer():
             print epi_cls, ' classes have been infered.'
 
     # Output the predicted scores into the file.
-    out_fname = 'data/' + args.city + '/data/' + args.city + '_prediction_probs.txt'
+    out_fname = 'eval/' + args.city + '_prediction_probs.txt'
     fout = open(out_fname, 'w')
     fout.write(Str_IOString.getvalue())
     fout.close()
