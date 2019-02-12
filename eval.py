@@ -48,10 +48,12 @@ def sortedRec(train_fname, validation_fname, pred_fname, sorted_out_fname):
 
 
 city = 'Cha'
-train_fname = '/Users/rli02/Desktop/Yelp/' + city + '/' + city + '_training.txt'
-validation_fname = '/Users/rli02/Desktop/Yelp/' + city + '/' + city + '_validation.txt'
-pred_fname = 'data/' + city + '/data/' + city + '_prediction_probs.txt'
-sorted_out_fname = '/Users/rli02/Desktop/Yelp/' + city + '/data/' + city + '_sorted_recommendation.txt'
+
+train_fname = 'eval/' + city + '_training.txt'
+validation_fname = 'eval/' + city + '_validation.txt'
+pred_fname = 'eval/' + city + '_prediction_probs.txt'
+sorted_out_fname = 'eval/' + city + '_sorted_recommendation.txt'
+
 sortedRec(train_fname, validation_fname, pred_fname, sorted_out_fname)
 
 
@@ -161,6 +163,6 @@ def computeMAP(positionThres, train_fname, validation_fname, test_fname, sorted_
     print "map for all, top, tail business", format(MAP_mean/len(APDict), '.4f'), format(MAP_top/len(AP_top_Dict), '.4f'), format(MAP_tail/len(AP_tail_Dict), '.4f')
 
 positionThres = 10000
-test_ground_truth_fname = '/Users/rli02/Desktop/Yelp/' + city + '/' + city + '_test.txt'
-sorted_rec_fname = '/Users/rli02/Desktop/Yelp/' + city + '/data/' + city + '_sorted_recommendation.txt'
+test_ground_truth_fname = 'eval/' + city + '_test.txt'
+sorted_rec_fname = 'eval/' + city + '_sorted_recommendation.txt'
 computeMAP(positionThres, train_fname, validation_fname, test_ground_truth_fname, sorted_rec_fname)
