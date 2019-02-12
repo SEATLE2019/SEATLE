@@ -47,7 +47,7 @@ def sortedRec(train_fname, validation_fname, pred_fname, sorted_out_fname):
     fout.close()
 
 
-city = 'Tor'
+city = 'Cha'
 train_fname = '/Users/rli02/Desktop/Yelp/' + city + '/' + city + '_training.txt'
 validation_fname = '/Users/rli02/Desktop/Yelp/' + city + '/' + city + '_validation.txt'
 pred_fname = 'data/' + city + '/data/' + city + '_prediction_probs.txt'
