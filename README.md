@@ -13,15 +13,16 @@ For training, validation, and test set, we split each of them into two parts: on
 The positive set contains obeserved user check-ins, while the negative set is composed of fake check-ins by negative sampling.
 For each training, validation, and test file, the first column gives the business ID and the second column gives the user ID. Column three till column six give the geographical convinience features derived from Gaussian Mixture Model. The last column gives the label indicating whether it is oberved check-in or fake check-in. city_businessGeoDistance.txt gives the pairwise distances between businesses.
 ## Example to run this code
-To train the model, run
+(1) To train the model, run
 
 `python seatle_learning.py`
 
-To train the model:
+(2) To predict based on the model:
 
 choose the test infer mode in seatle_learning.py, then run
+
 `python seatle_learning.py`
 
-To evaluate the performance, run
+(3) To evaluate the performance, run
 
-'python test.py'
+`python test.py`
