@@ -25,4 +25,4 @@ choose the test infer mode in seatle_learning.py, then run
 
 (3) To evaluate the performance, run
 
-`python test.py`
+`python eval.py`
